@@ -1,11 +1,16 @@
 let myLibrary = [];
 
 class Book {
-  constructor(title, author, isRead) {
-    (this.title = title), (this.author = author), (this.isRead = isRead);
+  constructor(title, author, pages, isRead) {
+    (this.title = title),
+      (this.author = author),
+      (this.pages = pages),
+      (this.isRead = isRead);
   }
 }
 
 function addBookToLibrary() {
   // do stuff here
 }
+
+const addBook = document.querySelector(".addBook");

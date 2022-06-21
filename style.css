@@ -129,7 +129,7 @@ table {
 }
 
 /*----------Main CSS----------*/
-body {
+body button {
   font-family: "Kdam Thmor Pro", sans-serif;
 }
 
@@ -145,12 +145,60 @@ body {
   font-size: 2rem;
 }
 
-footer {
+.main-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.book-updated {
+  display: grid;
+  align-items: center;
+  border: 1px solid red;
+  height: 300px;
+  width: inherit;
   text-align: center;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.read-remove-button {
+  display: grid;
+  gap: 5px;
+  height: 100%;
+}
+
+#read,
+#remove:hover {
+  cursor: pointer;
+}
+
+#read {
+  background-color: rgb(85, 173, 85);
+  border-radius: 10px;
+  border: none;
+}
+#read:hover {
+  background-color: rgba(85, 173, 85, 0.75);
+}
+
+#remove {
+  background-color: rgb(203, 92, 92);
+  border-radius: 10px;
+  border: none;
+}
+#remove:hover {
+  background-color: rgb(203, 92, 92, 0.75);
+}
+
+#footer {
   position: absolute;
   bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   width: 100%;
-  height: auto;
-  padding: 3px;
-  background-color: lightcyan;
+  padding: var(--spacing-sm);
 }
