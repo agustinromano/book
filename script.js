@@ -18,5 +18,7 @@ const readBook = document.querySelector("#read");
 //Click the addBtn to submit bookName, authorName, pagesOfBook into the .main-page with the .book-updated styling
 
 function addBookToLibrary() {
-  addBtn.addEventListener("click");
+  addBtn.addEventListener("click", () => {
+    //the .main-page will update and display the book
+  });
 }
