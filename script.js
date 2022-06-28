@@ -11,12 +11,10 @@ class Book {
 }
 
 function addBookToLibrary() {
-  const newBook = new Book(
-    bookTitle.value,
-    authorName.value,
-    pagesOfBook.value
-  );
-  console.log(newBook);
+  addBtn.addEventListener("click", (newBook) => {
+    newBook = new Book(bookTitle.value, authorName.value, pagesOfBook.value);
+  });
+  console.log();
 }
 
 const addBtn = document.querySelector(".add-btn");
@@ -26,5 +24,3 @@ const pagesOfBook = document.querySelector("#pages");
 const readBook = document.querySelector("#read");
 
 //Click the addBtn to submit bookName, authorName, pagesOfBook into the .main-page with the .book-updated styling
-
-addBookToLibrary();
